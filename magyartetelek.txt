@@ -1,0 +1,18 @@
+Ady szerelmi költészete;Ady születése;1877;adyendre.png
+Ady szerelmi költészete;Héja nász az avaron megjelenése;1906;hejanasz.png
+Ady szerelmi költészete;Diósyné Brüll Adél;Léda hivatalos neve;leda.png
+Ady szerelmi költészete;Boncza Berta;Csinszka hivatalos neve;csinszka.png
+Ady szerelmi költészete;Adyra nagy hatással volt (filozófus);Friedrich Nietzsche;filozofus.png
+Ady szerelmi költészete;Lédával A Bálban fő motívuma;Halál motívuma;ledavalabalban.png
+Ady szerelmi költészete;Ebben halt meg Ady;Szifilisz;adyszifiliszes.png
+Szirén;Ki osztja meg?;Dankó Dani;terrorista.png
+Mikszáth Kálmán; Mikszáth Kálmán születése; 1847; mikszath_szuletes.png
+Mikszáth Kálmán;Vidéki környezetben élő embereknek ábrázolja Őket Mikszáth;Jópalócok;jopalocok.png
+Mikszáth Kálmán;Nőalakok szerepei;Hagyományos női szerepeket játszanak el;nok.png
+Mikszáth Kálmán;Kiemelkedő szerepet jászik Mikszáth Műveibben;Humor és irónia;humor.png
+Mikszáth Kálmán;Mikszáth stílusa;Romantikus és a realista;romantika.png
+Shakespeare - Hamlet;Hamlet fő témája;árulás, örökség és az identitás;hamlet.png
+Shakespeare - Hamlet;Motívum amely szinte az egész műben jelen van;halál motívuma;hamlet.png
+Shakespeare - Hamlet;Női karakterek ábrázolási módja a műben;küzdelem az identitásért, tragikus vég;hamlet.png
+Shakespeare - Hamlet;Hamlet egyedisége más Shakespeare-i főszereplőkhöz képest;bonyolult belső monológok;hamlet.png
+Shakespeare - Hamlet;Politikai tényezők amelyek szerepet játszanak a mű eseményeiben;hatalomátvétel, trónkövetelések;hamlet.png
