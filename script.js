@@ -76,6 +76,8 @@ var pontok = 0; // A pontok száma
 
 document.getElementById("quizStart").addEventListener("click", function() {
     if (!jatekFolyamatban) {
+        document.getElementById("temavalaszodiv").style.display = "none";
+        
         tartoDiv.innerHTML = "";
 
         var valasztott = document.getElementById("temaValasztas").value;
@@ -120,17 +122,30 @@ document.getElementById("quizStart").addEventListener("click", function() {
 
                         // Új kérdés generálása
                         setTimeout(function() {
-                            if (marMegvalaszoltKerdesek.length === valasztottlista.length) {
+                            if (marMegvalaszoltKerdesek.length == valasztottlista.length) {
                                 console.log("Pontok: " + pontok);
+                                tartoDiv.innerHTML="";
+                                document.getElementById("kerdes").innerHTML = "Pontjaid: " + valasztottlista.length+"/"+pontok;
+                          
                                 jatekFolyamatban = false;
-                                document.getElementById("temavalaszodiv").style.display = "block";
+
+                                var ujratoltoGomb = document.createElement("button");
+                                ujratoltoGomb.innerHTML = "Oké";
+                                ujratoltoGomb.addEventListener("click", function() {
+                                    location.reload();                  
+                                    var ujElem = document.createElement("div");
+                                    ujElem.innerHTML = "Új elem hozzáadva dinamikusan!";
+                                    tartoDiv.appendChild(ujElem);
+                                });
+                                tartoDiv.appendChild(ujratoltoGomb);
+
                             } else {
                                 var randomszam = Math.floor(Math.random() * kerdesek.length);
                                 var kerdes = kerdesek[randomszam];
                                 marMegvalaszoltKerdesek.push(kerdes);
                                 document.getElementById("kerdes").innerHTML = kerdes.esemény + "?";
                             }
-                        }, 1000); // Időzítés az új kérdés megjelenítéséhez (például 1 másodperc)
+                        }, 1); // Időzítés az új kérdés megjelenítéséhez (például 1 másodperc)
                     });
 
                     tartoDiv.appendChild(valaszdiv);

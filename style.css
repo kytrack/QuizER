@@ -1,6 +1,6 @@
 body
 {
-    background-image: linear-gradient(rgb(255, 220, 225), rgb(204, 131, 131));
+    background-image: linear-gradient(rgb(255, 220, 225), rgb(0, 0, 0));
 
 }
 #container{
@@ -13,7 +13,7 @@ body
     width: 50vw;
     height: 95vh;
     margin: auto;
-    background-image: linear-gradient(pink, rgb(241, 214, 245));
+    background-image: linear-gradient(rgb(174, 1, 29), rgb(241, 214, 245));
 
 }
 #opciok{
