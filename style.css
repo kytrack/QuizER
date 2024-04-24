@@ -1,45 +1,242 @@
-body
-{
-    background-image: linear-gradient(rgb(255, 220, 225), rgb(0, 0, 0));
-
+#quizWrap {
+    max-width: 600px;
+    margin: 0 auto;
 }
-#container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px palevioletred;
-    border-radius: 2%;
-    width: 50vw;
-    height: 95vh;
-    margin: auto;
-    background-image: linear-gradient(rgb(174, 1, 29), rgb(241, 214, 245));
 
+#quizQn {
+    padding: 20px;
+    background: #4c93ba;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
 }
-#opciok{
 
+#quizAns {
+    margin: 10px 0;
     display: grid;
-    margin-top: 100px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 100px;
-    row-gap:100px
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+#quizAns input[type=radio] {
+    display: none;
+}
+
+#quizAns label {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#quizAns label.correct {
+    background: #d8ffc4;
+    border: 1px solid #60a03f;
+}
+
+#quizAns label.wrong {
+    background: #ffe8e8;
+    border: 1px solid #c78181;
+}
+
+* {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    flex-direction: column;
+}
+
+#quizAns input[type="radio"] {
+    display: block;
+    margin-bottom: 10px; /* Opcionálisan állíthatod a margin-t, hogy legyen hely közöttük */
     
 }
-#kerdes{
-    padding-bottom: 10px;
-    border-bottom: solid 2px palevioletred;
-    font-style: italic;
-}
+.widget-wrap {
+    width: 85%;
     
-    
-.opcio{
-    padding: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
-    border: solid 2px palevioletred;
-    border-radius: 5%;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
 }
-.opcio:hover{
-    background-color: lightpink;
+#rosszvalaszok {
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
 }
+@media screen and (min-width: 768px) {
+    #quizAns input[type="radio"] {
+        display: none;
+        
+    }
+    .widget-wrap {
+        width: 600px;
+    }
+    #rosszvalaszok {
+        width: 600px;
+    }
+}
+
+
+#temavalaszodiv{
+    width: 200px;
+}
+#btnquiz{
+    display: none;
+}
+
+#kepekDiv {
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#kepekDiv img {
+    margin: 5px;
+    height:100px; /* Képek szélessége az 100%-a a tartalomhoz képest */
+    height: auto; /* Automatikus magasság beállítása a képarány megőrzése érdekében */
+}
+
+
+#helytelen{
+background-color: red;
+}
+
+#helyes{
+    background-color: green;
+}
+#btnquiz{
+    display: none;
+}
+button {
+    color: red;
+}
+input::file-selector-button {
+    height: 30px;
+	padding: 0;
+	background: rgba(148, 187, 233, 1);
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	overflow: hidden;
+    font-weight: bolder;
+	font-size: 16px;
+	font-weight: 500;
+    color: white;
+	cursor: pointer;
+}
+
+.button {
+    display: flex;
+    height: 50px;
+    padding: 0;
+    background: rgba(148, 187, 233, 1);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background: rgba(104, 132, 163, 1);
+  }
+  
+  .button:active {
+    background: rgb(67, 86, 107);
+  }
+  
+  .button__text,
+  .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+  }
+  
+  .button__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+  }
+  #quizStart {
+    margin: 0 auto 0 auto;
+  }
+
+
+
+
+
+
+#rosszvalaszok > div {
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#kepekDiv img {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.8);
+  }
+#temavalaszodiv {
+    margin-bottom: 10px;
+  }
+
+#kepekCheckbox{
+    display: none;
+}
+
+.button2 {
+    display: flex;
+    height: 50px;
+    background: rgb(233, 148, 148);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .button2:hover {
+    background: rgb(163, 104, 104);
+  }
+  
+  .button2:active {
+    background: rgb(107, 67, 67);
+  }
+  
+  .button2__text,
+  .button2__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+  }
+  
+  .button2__icon {
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+  }

@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madszar kvliz</title>
-    <script defer src="script.js"></script>
+    <title>Kviz</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
-
 <body>
-    <div id="temavalaszodiv">
-        <input type="file" id="fileInput">
-        <label for="temaValasztas">Téma kiválasztása</label>
-        <select id="temaValasztas">
-        </select>
-        <button id="quizStart">Quiz Elindítása</button>
-    </div>
-
-
-    <div id="container">
-        <div id="kerdes">
-            <h1>Kérdés</h1>
+    
+    <div class="widget-wrap">
+        <h1>TÚRÓ CSOPORT KVÍZ</h1>
+        <div id="temavalaszodiv">
+            <input type="file" id="fileInput">
+            <label for="temaValasztas">Téma kiválasztása</label>
+            <select id="temaValasztas">
+            </select>
         </div>
-
-        <div id="opciok">
+        <button type="button" class="button" id="quizStart">
+            <span class="button__text">Quiz Indítása</span>
+            <span class="button__icon">
+                <img src="nyomod.png" alt="nyomod" width="20px">
+            </span>
+        </button>
+        <div id="quizWrap">
+            <div id="kepekCheckbox"><input type="checkbox"> Képek megjelenítése</div>
+            <div id="kepekDiv">
+                <img src="images/filozofus.jpg" alt="" height="120px" id="kep1">
+                <img src="images/filozofus.jpg" alt="" height="120px" id="kep2">
+                <img src="images/filozofus.jpg" alt="" height="120px" id="kep3">
+            </div>
         </div>
-
+        <div id="quizbutton"><button id="btnquiz" type="button" onclick="Vissza()" class="button2">
+            <span class="button2__text">Vissza</span>
+            <span class="button2__icon">
+                <img src="vissza.png" alt="nyomod" width="20px">
+            </span>
+        </button></div>
     </div>
+<hr>
 </body>
-
 </html>
